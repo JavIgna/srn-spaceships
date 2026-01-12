@@ -7,7 +7,7 @@ import FilterButton from '@/components/FilterButton';
 import { filterSpaceships, getFactions, getFactionColorMap } from '@/utils/filters';
 
 export default function HomeScreen() {
-  const { data, loading, error } = useSpaceships();
+  const { data, loading, error, refreshing, refetch } = useSpaceships();
   const router = useRouter();
   const [selectedFaction, setSelectedFaction] = useState<string | null>(null);
 
@@ -65,6 +65,8 @@ export default function HomeScreen() {
             color={factionColorMap[item.faction]}
           />
         )}
+        refreshing={refreshing}
+        onRefresh={refetch}
       />
     </View>
   );
