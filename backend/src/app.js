@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import rootRoutes from './routes/root.routes.js';
 
 // Express application configuration.
 // This file is responsible for middleware setup and route registration.
@@ -10,9 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Root endpoint to verify API availability
-app.get('/', (req, res) => {
-  res.status(200).json({ message: 'Welcome to the Spaceships API!' });
-});
+// Register routes
+app.use('/', rootRoutes);
 
 export default app;
