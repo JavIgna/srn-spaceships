@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Millennium Falcon",
+        "description": "Un carguero ligero YT-1300 corelliano muy modificado. Famosa por recorrer el Corredor de Kessel en menos de 12 pársecs.",
+        "faction": "Rebels"
+    },
+    {
+        "id": 2,
+        "name": "X-Wing (T-65B)",
+        "description": "El caza estelar versátil de la Alianza Rebelde que equilibra velocidad y potencia de fuego. Famoso por destruir la Estrella de la Muerte.",
+        "faction": "Rebels"
+    },
+    {
+        "id": 3,
+        "name": "TIE Fighter",
+        "description": "Símbolo inolvidable de la flota imperial. Caza estelar de corto alcance, rápido y ágil, pero sin escudos deflectores.",
+        "faction": "Empire"
+    },
+    {
+        "id": 4,
+        "name": "Slave I",
+        "description": "Una nave de ataque y patrulla clase Firespray-31 modificada, utilizada por los cazarrecompensas Jango Fett y Boba Fett.",
+        "faction": "Bounty Hunters"
+    },
+    {
+        "id": 5,
+        "name": "Star Destroyer",
+        "description": "Nave capital masiva en forma de cuña, columna vertebral de la Armada Imperial. Posee una potencia de fuego abrumadora.",
+        "faction": "Empire"
+    },
+    {
+        "id": 6,
+        "name": "Razor Crest",
+        "description": "Una cañonera ST-70 de asalto ex-militar utilizada por el Mandaloriano Din Djarin para sus misiones.",
+        "faction": "Independent"
+    },
+    {
+        "id": 7,
+        "name": "Y-Wing",
+        "description": "Bombardero de asalto estelar. Aunque lento y menos maniobrable, es conocido por su durabilidad y gran carga de bombas.",
+        "faction": "Rebels"
+    },
+    {
+        "id": 8,
+        "name": "TIE Advanced x1",
+        "description": "Prototipo de caza estelar utilizado por Darth Vader, con escudos y un hipermotor, superando a los TIE estándar.",
+        "faction": "Empire"
+    },
+    {
+        "id": 9,
+        "name": "Naboo N-1 Starfighter",
+        "description": "Caza elegante y artesanal utilizado por el cuerpo de defensa de Naboo, destaca por su acabado en cromo y amarillo.",
+        "faction": "Republic"
+    },
+    {
+        "id": 10,
+        "name": "Executor",
+        "description": "El buque insignia personal de Darth Vader. Una de las naves más grandes y poderosas jamás construidas.",
+        "faction": "Empire"
+    }
+]
