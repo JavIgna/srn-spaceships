@@ -10,6 +10,22 @@ and a mobile application developed with React Native using Expo.
 - `/backend`: REST API (Node.js + Express)
 - `/mobile`: Mobile application (React Native + Expo)
 
+## Running the Backend (Docker)
+
+From the `backend` directory, run:
+
+```bash
+docker-compose up --build
+```
+
+The API will be available at:
+
+http://localhost:3000
+
+The spaceships endpoint is:
+
+http://localhost:3000/api/spaceships
+
 ## Technical Decisions
 
 ### Static Dataset Handling
@@ -23,6 +39,7 @@ they may present compatibility issues across different Node versions and
 execution environments (such as Docker or CI pipelines).
 
 This approach ensures better stability, portability, and ease of execution
-for reviewers and deployment environments.
+for reviewers and deployment environments. Since the dataset is static,
+it is loaded once into memory to avoid unnecessary file system access.
 
 This decision prioritizes reliability and maintainability over experimental features.
