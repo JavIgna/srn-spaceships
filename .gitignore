@@ -1,0 +1,16 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Expo
+.expo/
+.expo-shared/
+web-build/
+
+# OS
+.DS_Store
+Thumbs.db
