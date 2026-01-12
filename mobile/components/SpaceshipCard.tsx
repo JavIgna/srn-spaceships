@@ -1,7 +1,9 @@
-import { Pressable, Text, View, Platform } from 'react-native';
+import { Pressable, View, Platform } from 'react-native';
 import { Spaceship } from '@/models/Spaceship';
 import { Ionicons } from '@expo/vector-icons';
 import { hexToRgba } from '@/utils/filters';
+import Typography from './Typography';
+import Avatar from './Avatar';
 
 interface Props {
   spaceship: Spaceship;
@@ -35,24 +37,11 @@ export function SpaceshipCard({ spaceship, onPress, color }: Props) {
         }}
       >
         <View style={{ marginRight: 12, alignItems: 'center' }}>
-          <View
-            style={{
-              width: 48,
-              height: 48,
-              borderRadius: 24,
-              alignItems: 'center',
-              justifyContent: 'center',
-              backgroundColor: color ? hexToRgba(color, 0.12) : undefined,
-            }}
-          >
-            <Text style={{ fontSize: 16, fontWeight: '700', color: color ?? '#666' }}>
-              {spaceship.name.charAt(0).toUpperCase()}
-            </Text>
-          </View>
+          <Avatar label={spaceship.name} size={48} backgroundColor={color ? hexToRgba(color, 0.12) : undefined} color={color ?? '#666'} />
         </View>
 
         <View style={{ flex: 1 }}>
-          <Text style={{ fontSize: 16, fontWeight: '700' }}>{spaceship.name}</Text>
+          <Typography variant="title">{spaceship.name}</Typography>
 
           <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 8 }}>
             <View
@@ -64,7 +53,7 @@ export function SpaceshipCard({ spaceship, onPress, color }: Props) {
                 backgroundColor: color ? hexToRgba(color, 0.12) : undefined,
               }}
             >
-              <Text style={{ color: color ?? '#666', fontWeight: '600' }}>{spaceship.faction}</Text>
+              <Typography variant="label" color={color ?? '#666'}>{spaceship.faction}</Typography>
             </View>
           </View>
         </View>
