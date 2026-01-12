@@ -226,3 +226,11 @@ Resubmission workflow:
 2. Record a short video (Loom/MP4) showing how to verify the features.
 3. Include reviewer notes in App Store Connect with steps and test data.
 4. Submit via TestFlight and reference the video/screenshots in the review notes.
+
+## Demo video
+
+Watch a short demo of the app here:
+
+- https://youtube.com/shorts/GbG4SqbOKhI
+
+You can open the link on a device or desktop to see a quick walkthrough of the app UI and interactions.
